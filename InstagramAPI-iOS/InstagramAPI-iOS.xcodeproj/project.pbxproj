@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28507255177F4AEA00B70443 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28507254177F4AEA00B70443 /* UIKit.framework */; };
+		28507257177F4AEA00B70443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28507256177F4AEA00B70443 /* Foundation.framework */; };
+		28507259177F4AEA00B70443 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28507258177F4AEA00B70443 /* CoreGraphics.framework */; };
+		2850725F177F4AEA00B70443 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2850725D177F4AEA00B70443 /* InfoPlist.strings */; };
+		28507261177F4AEA00B70443 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28507260177F4AEA00B70443 /* main.m */; };
+		28507267177F4AEA00B70443 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 28507266177F4AEA00B70443 /* Default.png */; };
+		28507269177F4AEA00B70443 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28507268177F4AEA00B70443 /* Default@2x.png */; };
+		2850726B177F4AEA00B70443 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2850726A177F4AEA00B70443 /* Default-568h@2x.png */; };
+		2850726E177F4AEA00B70443 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2850726C177F4AEA00B70443 /* MainStoryboard.storyboard */; };
+		2850727C177F4C1A00B70443 /* IAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2850727B177F4C1A00B70443 /* IAViewController.m */; };
+		28507285177F4CDE00B70443 /* IAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28507284177F4CDE00B70443 /* IAAppDelegate.m */; };
+		2850728D177F684400B70443 /* IAConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2850728C177F684400B70443 /* IAConstants.m */; };
+		28507290177F743600B70443 /* IAServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2850728F177F743600B70443 /* IAServerManager.m */; };
+		28629AD9177F881B003045FB /* IAImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28629AD8177F881B003045FB /* IAImageCell.m */; };
+		28A6B88617807B4200EA72F3 /* plaseholder.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 28A6B88517807B4200EA72F3 /* plaseholder.jpeg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28507251177F4AEA00B70443 /* InstagramAPI-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InstagramAPI-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28507254177F4AEA00B70443 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28507256177F4AEA00B70443 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		28507258177F4AEA00B70443 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2850725C177F4AEA00B70443 /* InstagramAPI-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstagramAPI-iOS-Info.plist"; sourceTree = "<group>"; };
+		2850725E177F4AEA00B70443 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		28507260177F4AEA00B70443 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		28507262177F4AEA00B70443 /* InstagramAPI-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InstagramAPI-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		28507266177F4AEA00B70443 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		28507268177F4AEA00B70443 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2850726A177F4AEA00B70443 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2850726D177F4AEA00B70443 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2850727A177F4C1A00B70443 /* IAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IAViewController.h; path = Classes/ViewControllers/IAViewController.h; sourceTree = "<group>"; };
+		2850727B177F4C1A00B70443 /* IAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IAViewController.m; path = Classes/ViewControllers/IAViewController.m; sourceTree = "<group>"; };
+		28507283177F4CDE00B70443 /* IAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAAppDelegate.h; sourceTree = "<group>"; };
+		28507284177F4CDE00B70443 /* IAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAAppDelegate.m; sourceTree = "<group>"; };
+		2850728B177F684400B70443 /* IAConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IAConstants.h; path = Classes/Common/IAConstants.h; sourceTree = "<group>"; };
+		2850728C177F684400B70443 /* IAConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IAConstants.m; path = Classes/Common/IAConstants.m; sourceTree = "<group>"; };
+		2850728E177F743600B70443 /* IAServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IAServerManager.h; path = Classes/Network/IAServerManager.h; sourceTree = "<group>"; };
+		2850728F177F743600B70443 /* IAServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IAServerManager.m; path = Classes/Network/IAServerManager.m; sourceTree = "<group>"; };
+		28629AD4177F8328003045FB /* IAServerManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IAServerManagerDelegate.h; path = Classes/Network/IAServerManagerDelegate.h; sourceTree = "<group>"; };
+		28629AD7177F881B003045FB /* IAImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IAImageCell.h; path = Classes/Views/Cells/IAImageCell.h; sourceTree = "<group>"; };
+		28629AD8177F881B003045FB /* IAImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IAImageCell.m; path = Classes/Views/Cells/IAImageCell.m; sourceTree = "<group>"; };
+		28A6B88517807B4200EA72F3 /* plaseholder.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = plaseholder.jpeg; path = Resources/plaseholder.jpeg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2850724E177F4AEA00B70443 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28507255177F4AEA00B70443 /* UIKit.framework in Frameworks */,
+				28507257177F4AEA00B70443 /* Foundation.framework in Frameworks */,
+				28507259177F4AEA00B70443 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28507248177F4AEA00B70443 = {
+			isa = PBXGroup;
+			children = (
+				2850725A177F4AEA00B70443 /* InstagramAPI-iOS */,
+				28507253177F4AEA00B70443 /* Frameworks */,
+				28507252177F4AEA00B70443 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28507252177F4AEA00B70443 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28507251177F4AEA00B70443 /* InstagramAPI-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28507253177F4AEA00B70443 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28507254177F4AEA00B70443 /* UIKit.framework */,
+				28507256177F4AEA00B70443 /* Foundation.framework */,
+				28507258177F4AEA00B70443 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2850725A177F4AEA00B70443 /* InstagramAPI-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				28507281177F4CB600B70443 /* Resources */,
+				2850727D177F4C2300B70443 /* Classes */,
+				2850725B177F4AEA00B70443 /* Supporting Files */,
+			);
+			path = "InstagramAPI-iOS";
+			sourceTree = "<group>";
+		};
+		2850725B177F4AEA00B70443 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2850725C177F4AEA00B70443 /* InstagramAPI-iOS-Info.plist */,
+				2850725D177F4AEA00B70443 /* InfoPlist.strings */,
+				28507260177F4AEA00B70443 /* main.m */,
+				28507262177F4AEA00B70443 /* InstagramAPI-iOS-Prefix.pch */,
+				28507266177F4AEA00B70443 /* Default.png */,
+				28507268177F4AEA00B70443 /* Default@2x.png */,
+				2850726A177F4AEA00B70443 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2850727D177F4C2300B70443 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				28629AD5177F87EB003045FB /* Views */,
+				2850728A177F682E00B70443 /* Common */,
+				28507289177F682400B70443 /* Network */,
+				28507282177F4CDE00B70443 /* Application */,
+				2850727E177F4C3000B70443 /* ViewControllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2850727E177F4C3000B70443 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2850727A177F4C1A00B70443 /* IAViewController.h */,
+				2850727B177F4C1A00B70443 /* IAViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		28507281177F4CB600B70443 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28A6B88517807B4200EA72F3 /* plaseholder.jpeg */,
+				2850726C177F4AEA00B70443 /* MainStoryboard.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		28507282177F4CDE00B70443 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				28507283177F4CDE00B70443 /* IAAppDelegate.h */,
+				28507284177F4CDE00B70443 /* IAAppDelegate.m */,
+			);
+			name = Application;
+			path = Classes/Application;
+			sourceTree = "<group>";
+		};
+		28507289177F682400B70443 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2850728E177F743600B70443 /* IAServerManager.h */,
+				2850728F177F743600B70443 /* IAServerManager.m */,
+				28629AD4177F8328003045FB /* IAServerManagerDelegate.h */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		2850728A177F682E00B70443 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2850728B177F684400B70443 /* IAConstants.h */,
+				2850728C177F684400B70443 /* IAConstants.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		28629AD5177F87EB003045FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				28629AD6177F87F5003045FB /* Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		28629AD6177F87F5003045FB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				28629AD7177F881B003045FB /* IAImageCell.h */,
+				28629AD8177F881B003045FB /* IAImageCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28507250177F4AEA00B70443 /* InstagramAPI-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28507274177F4AEA00B70443 /* Build configuration list for PBXNativeTarget "InstagramAPI-iOS" */;
+			buildPhases = (
+				2850724D177F4AEA00B70443 /* Sources */,
+				2850724E177F4AEA00B70443 /* Frameworks */,
+				2850724F177F4AEA00B70443 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "InstagramAPI-iOS";
+			productName = "InstagramAPI-iOS";
+			productReference = 28507251177F4AEA00B70443 /* InstagramAPI-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28507249177F4AEA00B70443 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IA;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Sergei Pekar";
+			};
+			buildConfigurationList = 2850724C177F4AEA00B70443 /* Build configuration list for PBXProject "InstagramAPI-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 28507248177F4AEA00B70443;
+			productRefGroup = 28507252177F4AEA00B70443 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28507250177F4AEA00B70443 /* InstagramAPI-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2850724F177F4AEA00B70443 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2850725F177F4AEA00B70443 /* InfoPlist.strings in Resources */,
+				28507267177F4AEA00B70443 /* Default.png in Resources */,
+				28507269177F4AEA00B70443 /* Default@2x.png in Resources */,
+				2850726B177F4AEA00B70443 /* Default-568h@2x.png in Resources */,
+				2850726E177F4AEA00B70443 /* MainStoryboard.storyboard in Resources */,
+				28A6B88617807B4200EA72F3 /* plaseholder.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2850724D177F4AEA00B70443 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28507261177F4AEA00B70443 /* main.m in Sources */,
+				2850727C177F4C1A00B70443 /* IAViewController.m in Sources */,
+				28507285177F4CDE00B70443 /* IAAppDelegate.m in Sources */,
+				2850728D177F684400B70443 /* IAConstants.m in Sources */,
+				28507290177F743600B70443 /* IAServerManager.m in Sources */,
+				28629AD9177F881B003045FB /* IAImageCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2850725D177F4AEA00B70443 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2850725E177F4AEA00B70443 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2850726C177F4AEA00B70443 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2850726D177F4AEA00B70443 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28507272177F4AEA00B70443 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		28507273177F4AEA00B70443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28507275177F4AEA00B70443 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstagramAPI-iOS/InstagramAPI-iOS-Prefix.pch";
+				INFOPLIST_FILE = "InstagramAPI-iOS/InstagramAPI-iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		28507276177F4AEA00B70443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstagramAPI-iOS/InstagramAPI-iOS-Prefix.pch";
+				INFOPLIST_FILE = "InstagramAPI-iOS/InstagramAPI-iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2850724C177F4AEA00B70443 /* Build configuration list for PBXProject "InstagramAPI-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28507272177F4AEA00B70443 /* Debug */,
+				28507273177F4AEA00B70443 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28507274177F4AEA00B70443 /* Build configuration list for PBXNativeTarget "InstagramAPI-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28507275177F4AEA00B70443 /* Debug */,
+				28507276177F4AEA00B70443 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28507249177F4AEA00B70443 /* Project object */;
+}

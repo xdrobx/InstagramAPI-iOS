@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="t8N-q5-DIr">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="GMZ-0E-uwT">
+            <objects>
+                <tableViewController id="t8N-q5-DIr" customClass="IAViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="306" sectionHeaderHeight="22" sectionFooterHeight="22" id="Xit-s0-pDH">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="gCN-4j-FhH" customClass="IAImageCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="306"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="305"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDg-Gw-scX">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="305" id="sT7-1q-wlp"/>
+                                            </constraints>
+                                        </imageView>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Th1-rS-RvH">
+                                            <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </activityIndicatorView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGh-Rt-VFT">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Th1-rS-RvH" firstAttribute="leading" secondItem="gCN-4j-FhH" secondAttribute="leading" constant="138" id="AAL-j3-Lwg"/>
+                                    <constraint firstItem="DDg-Gw-scX" firstAttribute="top" secondItem="gCN-4j-FhH" secondAttribute="top" type="default" id="BfC-yN-0is"/>
+                                    <constraint firstItem="DDg-Gw-scX" firstAttribute="leading" secondItem="gCN-4j-FhH" secondAttribute="leading" type="default" id="DwE-kO-Zdc"/>
+                                    <constraint firstItem="DDg-Gw-scX" firstAttribute="trailing" secondItem="gCN-4j-FhH" secondAttribute="trailing" type="default" id="JlS-N4-4oE"/>
+                                    <constraint firstAttribute="trailing" secondItem="fGh-Rt-VFT" secondAttribute="trailing" constant="15" id="RI7-rd-5bC"/>
+                                    <constraint firstItem="Th1-rS-RvH" firstAttribute="top" secondItem="gCN-4j-FhH" secondAttribute="top" constant="133" id="nw3-9O-PFV"/>
+                                    <constraint firstAttribute="bottom" secondItem="fGh-Rt-VFT" secondAttribute="bottom" constant="14" id="uW3-wD-oOS"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageIndexTxt" destination="fGh-Rt-VFT" id="2VL-Wp-cIL"/>
+                                    <outlet property="imageView" destination="DDg-Gw-scX" id="9Q3-ET-LpO"/>
+                                    <outlet property="progress" destination="Th1-rS-RvH" id="IlE-Sa-6h0"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="t8N-q5-DIr" id="itI-Ba-FTj"/>
+                            <outlet property="delegate" destination="t8N-q5-DIr" id="GXF-JX-pAg"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5B5-Cy-JjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-344" y="-215"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="IAImageCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IAImageCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imageIndexTxt" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="progress" candidateClass="UIActivityIndicatorView"/>
+            </relationships>
+        </class>
+        <class className="IAViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IAViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
